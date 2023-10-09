@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+
+    <h1>Php</h1>
+
+    <img class="pingu" src="https://www.pngall.com/wp-content/uploads/5/Linux-Logo-PNG-Download-Image.png" alt="" width="250">
+    <hr>
+
+    
+    <div >
+        <h1 class="titulos">HOLA</h1>
+        <h2 class="titulos">HOLA</h2>
+        <h3 class="titulos">HOLA</h3>
+        <h4 class="titulos">HOLA</h4>
+        <h5 class="titulos">HOLA</h5>
+        <h6 class="titulos">HOLA</h6>
+    </div>
+
+    <script>
+
+    const hs = document.body;
+
+    function randomColors() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+    }
+
+
+    function changeColorOnClick() {
+    const randomColor = randomColors();
+    hs.style.backgroundColor = randomColor;
+    }
+
+    hs.addEventListener('click', setInterval(changeColorOnClick, 400));
+
+
+    const pingu = document.querySelector(".pingu");
+
+    function randomrot() {
+    const grados = Math.floor(Math.random() * 180); 
+    return grados;
+}
+
+    function rotacion() {
+        const grados = randomrot()
+        let rotation = grados+"deg";
+        pingu.style.transform = "rotate(" + rotation + ")"
+    }
+
+    pingu.addEventListener("click", rotacion)
+
+    </script>
+
+    
+    ul>li.item$*5{Texto dentro de li $}
+
+
+    
+    <a href="google.com" target="new">GOOGLE</a>
+</body>
+</html>
